@@ -8,8 +8,8 @@ let categoryId
 
 beforeAll(async()=>{
     const user = {
-        email: "jesusC@gmail.com",
-        password: "jesus123"
+        email: "jesus@gmail.com",
+        password: "jesus1234"
     }
 
     const res = await request(app)

@@ -1,12 +1,12 @@
 const sequelize = require('../utils/connection');
 const user = require('./createData/user');
-require("../models/Category")
+require("../models")
 
 const main = async() => {
     try{
         await sequelize.sync({ force: true });
         await user()
-        console.log('Finalizado');
+        console.log('Inicializando tests');
         process.exit();
     } catch(error){
         console.log(error);
