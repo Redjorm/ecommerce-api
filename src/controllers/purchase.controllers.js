@@ -6,7 +6,6 @@ const Cart = require('../models/Cart');
 const getAll = catchError(async(req, res) => {
     const userId = req.user.id
     const results = await Purchase.findAll({
-
         where:{userId},
         include:[Product]
 
